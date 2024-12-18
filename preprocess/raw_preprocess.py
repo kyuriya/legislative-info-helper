@@ -49,11 +49,9 @@ def process_data(data):
             "title": data.get("title", ""),
             "committee": data.get("committee", ""),
             "field": data.get("field", ""),
-            "paragraph": data.get("paragraph", ""),
+            "paragraph": data.get("gen_summary", ""),  # gen_summary를 paragraph로 대체
             "enactment": data.get("enactment", ""),
             "amendment": data.get("amendment", ""),
-            "ext_summary": data.get("ext_summary", ""),
-            "gen_summary": data.get("gen_summary", ""),
             "terminology": data.get("terminology", ""),
             "disposal": data.get("disposal", ""),
             "date": data.get("date", "")
